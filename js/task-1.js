@@ -1,7 +1,13 @@
 function slugify(title) { 
-
+    const lowerTitle = title.toLowerCase().trim();
+    const titleCut = lowerTitle.split(" ");
+    const titleJoin = titleCut.join("-");
+    return titleJoin
 }
 
+// * делим по пробелу
+// * преобразуем в малый регистр
+// * объединяем по тире
 
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
