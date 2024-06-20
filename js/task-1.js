@@ -2,8 +2,9 @@ function slugify(title) {
     const lowerTitle = title.toLowerCase().trim();
     const titleCut = lowerTitle.split(" ");
     const titleJoin = titleCut.join("-");
-    return titleJoin
+    return titleJoin;
 }
+
 
 // * делим по пробелу
 // * преобразуем в малый регистр

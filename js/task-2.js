@@ -1,11 +1,5 @@
 function makeArray(firstArray, secondArray, maxLength) {
-    
-    // * конкат второго массива к первому
-    // * добавить условие ИФ с обрезанием нового массива по длине
-    // * ЕЛСЕ просто вернуть новый массив
-    
     const newArr = firstArray.concat(secondArray);
-
     if (newArr.length > maxLength) {
         return newArr.slice(0, maxLength)
     }
@@ -15,7 +9,9 @@ function makeArray(firstArray, secondArray, maxLength) {
 }
 
 
-
+// * конкат второго массива к первому
+// * добавить условие ИФ с обрезанием нового массива по длине
+// * ЕЛСЕ просто вернуть новый массив
 
 
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
